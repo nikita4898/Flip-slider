@@ -1,0 +1,52 @@
+* {
+    font-family: Arial;
+}
+
+.flipster{
+    overflow-x: visible;
+}
+
+section {
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.coverflow ul li div{
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #a6a5a5;
+}
+
+.coverflow ul li div h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 0 20px;
+}
+
+.coverflow p {
+    max-width: 250px;
+    width: 100%;
+    color: #a53b51;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.flipster--coverflow .flipster__item--future .flipster__item__content {
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform: scale(1) rotate(10deg);
+    -webkit-transform: scale(1) rotate(10deg);
+
+}
+
+.flipster--coverflow .flipster__item--past .flipster__item__content {
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform: scale(1) rotate(-10deg);
+    -webkit-transform: scale(1) rotate(-10deg);
+}

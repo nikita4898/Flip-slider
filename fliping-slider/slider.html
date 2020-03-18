@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flip-slider-demo</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.flipster.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section>
+		<div class="coverflow">
+			<ul>
+				<li>
+					<h2>Let's try this.</h2>
+					<p>
+						Hey you're a good programmer and you don't have to be afraid if you have not idea of anything. You'll learn about all things in future so don't be scared and be growing and that's true prgraamer do.
+					</p>
+				</li>
+				<li>
+					<h2>Let's try this.</h2>
+					<p>
+						Hey you're a good programmer and you don't have to be afraid if you have not idea of anything. You'll learn about all things in future so don't be scared and be growing and that's true prgraamer do.
+					</p>
+				</li>
+				<li>
+					<h2>Let's try this.</h2>
+					<p>
+						Hey you're a good programmer and you don't have to be afraid if you have not idea of anything. You'll learn about all things in future so don't be scared and be growing and that's true prgraamer do.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.flipster.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".coverflow").flipster({
+				itemContainer: 'ul',
+				itemSelector: 'li',
+				start: 0,
+				click: true,
+				touch: true,
+				loop: true,
+			});
+		});
+
+	</script>
+</body>
+</html>
